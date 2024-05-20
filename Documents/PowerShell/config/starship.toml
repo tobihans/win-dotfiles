@@ -1,0 +1,248 @@
+add_newline = false
+command_timeout = 1000
+continuation_prompt = "[~>](yellow) "
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$golang\
+$helm\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$nim\
+$perl\
+$php\
+$python\
+$ruby\
+$rust\
+$scala\
+$terraform\
+$nix_shell\
+$conda\
+$meson\
+$memory_usage\
+$aws\
+$gcloud\
+$azure\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$jobs\
+$status\
+$container\
+$shell\
+$line_break\
+$os\
+$battery\
+$time\
+$character"""
+
+[character]
+success_symbol = '[~>](green)'
+error_symbol = '[~>](red)'
+
+[aws]
+symbol = "  "
+disabled = true
+format = ''
+
+[azure]
+disabled = true
+format = '{[$symbol($subscription)]($style)}'
+
+[battery]
+format = '[$symbol$percentage]($style)'
+
+[[battery.display]]
+threshold = 30
+style = 'bold red'
+
+[[battery.display]]
+threshold = 100
+style = 'green'
+
+[c]
+symbol = " "
+format = '{[$symbol($version(-$name))]($style)}'
+
+[cmake]
+format = '{[$symbol($version)]($style)}'
+
+[cmd_duration]
+format = '{[⏱ $duration]($style)}'
+style = 'yellow'
+
+[conda]
+symbol = " "
+format = '{[$symbol$environment]($style)}'
+
+[dart]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[deno]
+format = '{[$symbol($version)]($style)}'
+
+[docker_context]
+symbol = " "
+format = '{[$symbol$context]($style)}'
+
+[dotnet]
+format = '{[$symbol($version)(🎯 $tfm)]($style)}'
+
+[directory]
+read_only = " "
+
+[elixir]
+symbol = " "
+format = '{[$symbol($version \(OTP $otp_version\))]($style)}'
+
+[gcloud]
+disabled = true
+format = '{[$symbol$account(@$domain)(\($region\))]($style)}'
+
+[git_branch]
+symbol = " "
+format = '{[$symbol$branch]($style)}'
+
+[git_status]
+format = '([{$all_status$ahead_behind}]($style))'
+
+[golang]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[helm]
+format = '{[$symbol($version)]($style)}'
+
+[java]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[kotlin]
+format = '{[$symbol($version)]($style)}'
+
+[kubernetes]
+disabled = true
+format = '{[$symbol$context( \($namespace\))]($style)}'
+
+[lua]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[memory_usage]
+symbol = " "
+format = '{$symbol[$ram( | $swap)]($style)}'
+
+[nim]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[nix_shell]
+symbol = " "
+format = '{[$symbol$state( \($name\))]($style)}'
+
+[nodejs]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[os]
+format = '[$symbol]($style)|'
+disabled = false
+style = 'green bold'
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[package]
+symbol = " "
+format = '{[$symbol$version]($style)}'
+
+[perl]
+format = '{[$symbol($version)]($style)}'
+
+[php]
+format = '{[$symbol($version)]($style)}'
+
+[python]
+symbol = " "
+format = '{[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)}'
+
+[ruby]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[rust]
+symbol = " "
+format = '{[$symbol($version)]($style)}'
+
+[sudo]
+format = '{[as $symbol]}'
+
+[terraform]
+format = '{[$symbol$workspace]($style)}'
+
+[time]
+disabled = false
+use_12hr = true
+format = '|[$time]($style)|'
+style = 'yellow'
+
+[username]
+format = '{[$user]($style)}'
