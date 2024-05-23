@@ -26,7 +26,6 @@ $packages = @(
     'main/luarocks'
     'main/neofetch'
     'main/nodejs-lts'
-    'main/nodejs-lts'
     'main/php'
     'main/pipx'
     'main/ripgrep'
