@@ -1,0 +1,7 @@
+# Reuse my neovim config from https://github.com/tobihans/dotfiles
+["AppData\\Local\\nvim"]
+type = "archive"
+url = "https://github.com/tobihans/dotfiles/archive/main.tar.gz"
+stripComponents = 3
+include = ["dotfiles-main/dot_config/nvim/**"]
+refreshPeriod = "1h"
