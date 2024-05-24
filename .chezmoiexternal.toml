@@ -5,3 +5,8 @@ url = "https://github.com/tobihans/dotfiles/archive/main.tar.gz"
 stripComponents = 3
 include = ["dotfiles-main/dot_config/nvim/**"]
 refreshPeriod = "1h"
+
+[".config\\starship.toml"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/starship.toml"
+    refreshPeriod = "24h"
