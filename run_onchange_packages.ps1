@@ -1,6 +1,7 @@
 $buckets = @(
     'extras'
     'nerd-fonts'
+    'nonportable'
     'versions'
 )
 $packages = @(
@@ -9,9 +10,9 @@ $packages = @(
     'extras/lazygit'
     'extras/powertoys'
     'extras/vcredist2022'
-    'extras/vscode'
     'extras/zoom'
     'main/7zip'
+    'main/bat'
     'main/btop'
     'main/composer'
     'main/eza'
@@ -32,6 +33,7 @@ $packages = @(
     'main/nodejs-lts'
     'main/php'
     'main/pipx'
+    'main/qemu'
     'main/ripgrep'
     'main/starship'
     'main/stylua'
@@ -40,6 +42,7 @@ $packages = @(
     'main/xz'
     'main/zig'
     'nerd-fonts/VictorMono-NF-Mono'
+    'nonportable/virtualbox-np'
     'versions/python311'
 )
 $buckets.foreach({ scoop bucket add $PSItem })

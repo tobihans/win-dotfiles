@@ -1,12 +1,39 @@
-# Reuse my neovim config from https://github.com/tobihans/dotfiles
+["_vimrc"]
+type = "file"
+url = "https://github.com/tobihans/dotfiles/raw/main/dot_vimrc"
+refreshPeriod = "168h"
+
 ["AppData\\Local\\nvim"]
 type = "archive"
 url = "https://github.com/tobihans/dotfiles/archive/main.tar.gz"
 stripComponents = 3
 include = ["dotfiles-main/dot_config/nvim/**"]
-refreshPeriod = "1h"
+refreshPeriod = "72h"
 
 [".config\\starship.toml"]
     type = "file"
     url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/starship.toml"
-    refreshPeriod = "24h"
+    refreshPeriod = "168h"
+
+["AppData\\Roaming\\bob\\config.toml"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/bob/config.toml"
+    refreshPeriod = "168h"
+
+["AppData\\Roaming\\pypoetry\\config.toml"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/pypoetry/private_config.toml"
+    refreshPeriod = "168h"
+
+["AppData\\Roaming\\lazydocker\\config.yml"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/lazydocker/config.yml"
+    refreshPeriod = "168h"
+
+["AppData\\Roaming\\lazygit\\config.yml"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/lazygit/config.yml"
+    refreshPeriod = "168h"
+
+
+
