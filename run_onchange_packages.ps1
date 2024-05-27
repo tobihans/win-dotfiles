@@ -23,6 +23,7 @@ $packages = @(
     'main/gh'
     'main/git'
     'main/go'
+    'main/gsudo'
     'main/hurl'
     'main/innounp'
     'main/jq'
@@ -42,7 +43,6 @@ $packages = @(
     'main/xz'
     'main/zig'
     'nerd-fonts/VictorMono-NF-Mono'
-    'nonportable/virtualbox-np'
     'versions/python311'
 )
 $buckets.foreach({ scoop bucket add $PSItem })

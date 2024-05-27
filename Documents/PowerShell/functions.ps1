@@ -1,3 +1,0 @@
-function xo {
-  explorer $args
-}
