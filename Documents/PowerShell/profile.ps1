@@ -2,6 +2,7 @@ $env:EDITOR = "nvim"
 
 # Gsudo
 Import-Module gsudoModule
+
 # Starship
 Invoke-Expression (&starship init powershell)
 

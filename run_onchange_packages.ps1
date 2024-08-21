@@ -5,9 +5,11 @@ $buckets = @(
     'versions'
 )
 $packages = @(
+    'extras/filelight'
     'extras/kdeconnect'
     'extras/keepassxc'
     'extras/lazygit'
+    'extras/obsidian'
     'extras/powertoys'
     'extras/vcredist2022'
     'extras/zoom'
