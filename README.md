@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Terminal and Powershell from the Microsoft Store.
+- Terminal from the Microsoft Store.
 - Scoop
 - Microsoft Visual Studio for Rust development
 - A Rust installation
