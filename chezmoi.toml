@@ -2,4 +2,4 @@
 ps1 = { command = 'pwsh' }
 
 [cd]
-command = "pwsh"
+command = "nu"
