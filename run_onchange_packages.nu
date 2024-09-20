@@ -1,17 +1,22 @@
-$buckets = @(
+let buckets = [
     'extras'
     'nerd-fonts'
     'nonportable'
     'versions'
-)
-$packages = @(
+]
+
+let packages = [
     'extras/filelight'
     'extras/kdeconnect'
+    'extras/kdenlive'
     'extras/keepassxc'
     'extras/lazygit'
+    'extras/neovide'
     'extras/obsidian'
+    'extras/pet'
     'extras/powertoys'
     'extras/vcredist2022'
+    'extras/vscode'
     'extras/zoom'
     'main/7zip'
     'main/bat'
@@ -32,8 +37,11 @@ $packages = @(
     'main/just'
     'main/lazydocker'
     'main/luarocks'
+    'main/make'
     'main/neofetch'
+    'main/neovim'
     'main/nodejs-lts'
+    'main/nu'
     'main/php'
     'main/pipx'
     'main/qemu'
@@ -45,7 +53,8 @@ $packages = @(
     'main/xz'
     'main/zig'
     'nerd-fonts/VictorMono-NF-Mono'
-    'versions/python311'
-)
-$buckets.foreach({ scoop bucket add $PSItem })
-$packages.foreach({ scoop install $PSItem })
+    'versions/python312'
+]
+
+$buckets | each { |b| scoop bucket add $b }
+$packages | each { |p| scoop install $p }

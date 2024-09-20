@@ -1,3 +1,6 @@
 *.md
 vimfiles/.netrwhist
 vimfiles/dot_netrwhist
+
+AppData\Roaming\nushell\history.txt
+AppData\Roaming\nushell\scripts\\integrations

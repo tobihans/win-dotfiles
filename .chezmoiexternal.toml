@@ -10,6 +10,49 @@ stripComponents = 3
 include = ["dotfiles-main/dot_config/nvim/**"]
 refreshPeriod = "72h"
 
+# Nushell
+["AppData\\Local\\nu.ico"]
+    type = "file"
+    url = "https://github.com/nushell/nushell/raw/refs/heads/main/assets/nu_logo.ico"
+    refreshPeriod = "168h"
+["AppData\\Roaming\\nushell\\config.nu"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/nushell/config.nu"
+    refreshPeriod = "168h"
+["AppData\\Roaming\\nushell\\scripts\\aliases.nu"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/nushell/scripts/aliases.nu"
+    refreshPeriod = "168h"
+["AppData\\Roaming\\nushell\\scripts\\commands.nu"]
+    type = "file"
+    url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/nushell/scripts/commands.nu"
+    refreshPeriod = "168h"
+## - External Scripts
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\ssh.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/ssh/ssh-completions.nu"
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\git.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/git/git-completions.nu"
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\docker.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/docker/docker-completions.nu"
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\make.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/make/make-completions.nu"
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\just.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/just/just-completions.nu"
+["AppData\\Roaming\\nushell\\scripts\\integrations\\completions\\virsh.nu"]
+    type = "file"
+    refreshPeriod = "72h"
+    url = "https://github.com/nushell/nu_scripts/raw/main/custom-completions/virsh/virsh-completions.nu"
+
 [".config\\starship.toml"]
     type = "file"
     url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/starship.toml"
@@ -34,6 +77,4 @@ refreshPeriod = "72h"
     type = "file"
     url = "https://github.com/tobihans/dotfiles/raw/main/dot_config/lazygit/config.yml"
     refreshPeriod = "168h"
-
-
 
