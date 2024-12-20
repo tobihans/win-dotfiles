@@ -58,6 +58,7 @@ refreshPeriod = "72h"
     url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/starship.toml"
     refreshPeriod = "168h"
 
+# TODO: Remove bob and use scoop stable nvim version
 ["AppData\\Roaming\\bob\\config.toml"]
     type = "file"
     url = "https://raw.githubusercontent.com/tobihans/dotfiles/main/dot_config/bob/config.toml"
